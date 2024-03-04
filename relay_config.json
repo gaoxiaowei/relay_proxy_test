@@ -1,5 +1,5 @@
 {
-	"defalut": [{
+	"default": [{
 			"proxy_type": "http",
 			"host_name": "172.208.53.200",
 			"port": "3128",
