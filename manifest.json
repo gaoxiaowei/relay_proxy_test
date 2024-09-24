@@ -2,14 +2,31 @@
     "name": "WebClip Full-Screen Demo",
     "short_name": "WebClip Demo",
     "display": "standalone",
-    "start_url": "/Webclip.html",
+    "start_url": "https://htmlpreview.github.io/?https://github.com/gaoxiaowei/relay_proxy_test/blob/main/Webclip.html??utm_source=pwa_install",
     "icons": [
-        {
-            "src": "/images/webclip-icon.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        }
-    ],
+    {
+      "src": "https://open.spotifycdn.com/cdn/images/icons/Spotify_MWP_192.ebf939fd.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://open.spotifycdn.com/cdn/images/icons/Spotify_MWP_384.b98158a0.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "https://open.spotifycdn.com/cdn/images/icons/Spotify_MWP_512.50dd387d.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "https://open.spotifycdn.com/cdn/images/icons/Spotify_MWP_512.50dd387d.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
     "background_color": "#ffffff",
-    "theme_color": "#000000"
+    "theme_color": "#000000",
+    "prefer_related_applications": true
 }
