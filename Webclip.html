@@ -5,26 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#000000">
-    <link rel="apple-touch-icon" href="icon.png">
-    <title>FullScreen WebClip</title>
+    <title>WebClip Full-Screen Demo</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- WebClip Icon -->
+    <link rel="apple-touch-icon" href="/images/webclip-icon.png">
+
+    <!-- WebClip Startup Image -->
+    <link rel="apple-touch-startup-image" href="/images/startup-image.png">
+
     <style>
         body, html {
-            height: 100%;
             margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #f0f0f0;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #000;
-            color: #fff;
             font-family: Arial, sans-serif;
-            text-align: center;
+        }
+        h1 {
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to FullScreen Mode!</h1>
-    <p>Add this page to your home screen for a full-screen experience.</p>
+    <h1>Welcome to WebClip Full-Screen Mode</h1>
 </body>
 </html>
