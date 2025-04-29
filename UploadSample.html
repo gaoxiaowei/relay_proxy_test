@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>File Input Trigger</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .btn {
+      margin: 20px;
+      font-size: 36px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function triggerFileInputImmediate() {
+      document.getElementById('fileInput').click();
+    }
+
+    function triggerFileInputDelayed() {
+      // 仍然不推荐这样用在移动端浏览器
+      setTimeout(() => {
+        document.getElementById('fileInput').click();
+      }, 500);
+    }
+
+    function triggerAlert(delay, message) {
+      setTimeout(() => {
+        alert(message);
+      }, delay);
+    }
+  </script>
+</head>
+<body>
+  <button class="btn" onclick="triggerFileInputImmediate()">立即选择文件</button>
+  <button class="btn" onclick="triggerFileInputDelayed()">延迟0.5秒选择</button>
+  <input type="file" id="fileInput" style="display:none;" onchange="alert('你选择了：' + this.files[0].name)">
+
+  <button class="btn" onclick="triggerAlert(0, '立即弹窗')">立即弹窗</button>
+  <button class="btn" onclick="triggerAlert(500, '延迟弹窗')">延迟弹窗</button>
+</body>
+</html>
